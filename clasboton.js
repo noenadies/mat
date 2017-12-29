@@ -147,7 +147,7 @@ function cargaimaeditext(){
 
 
 
-function  Editext(game,vw,vh,styletext,functiongraficar){
+function  Editext(game,vw,vh,styletext){
 
 
 
@@ -2869,7 +2869,7 @@ btgraf.inputEnabled = true;
 btgraf.input.useHandCursor = true;
 
 
-btgraf.events.onInputDown.add(act_btngraf, this);
+//btgraf.events.onInputDown.add(act_btngraf, this);
 
 
 
@@ -5282,7 +5282,7 @@ var pantallavalor=0;
 
 this.update=function(){
 
-   
+
    btcero.position.x=game.camera.x;
    btcero.position.y=600;
 
