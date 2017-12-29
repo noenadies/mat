@@ -67,7 +67,6 @@ game.physics.enable(fon, Phaser.Physics.ARCADE);
     game.physics.arcade.gravity.y = 0;
 
 
-  
 
 
 
@@ -95,6 +94,16 @@ pstatico.anchor.setTo(0.5, 0.5);
     game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 
     
+graphics =game.add.graphics(0, 0);
+
+    graphics.beginFill(0x027a71);
+    graphics.lineStyle(4, 0x02fdeb, 0.6);
+    
+    graphics.moveTo(mundox/2, 0);
+    graphics.lineTo(mundox/2,mundoy);
+    graphics.moveTo(0,mundoy/2);
+    graphics.lineTo(mundox,mundoy/2);
+    
    
 
 var p1x=mundox/2;
@@ -104,7 +113,17 @@ var p2y=mundoy/2;
 
 
 
+var  style={ font: "bold "+String(vw*0.04)+"px Arial", fill: "#B21437", boundsAlignH: "center", boundsAlignV: "middle" };
+   editex= new  Editext(game,vw,vh,style);
 
+
+ //game.camera.follow(fon, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
+
+
+editex.update();
+
+editex.fijaracambasico(true);
+editex.visibletrigono(true);
 
 
 
@@ -113,18 +132,17 @@ var p2y=mundoy/2;
 }
 
 function update() {
-
-    fon.rotation += 0.005;
+  fon.rotation += 0.005;
 
 }
 
 function render() {
-   
+   game.debug.spriteInfo(fon, 32, 32);
+
+    game.debug.text("ESOTAM", 32, 32);
 
 }
      
-
-
 
 
 
