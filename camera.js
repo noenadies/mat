@@ -96,16 +96,6 @@ mir.animations.add('miraniid', [0, 1, 2 ]);
 
 
 
-   //game.stage.backgroundColor = '#0072bc';
-
-   
-    //  Enable Arcade Physics for the sprite
-   // game.physics.enable(sprite, Phaser.Physics.ARCADE);
-
-    //  Tell it we don't want physics to manage the rotation
-    //sprite.body.allowRotation = false;
-
-  //  game.physics.startSystem(Phaser.Physics.P2JS);
  pstatico = game.add.sprite(game.world.centerX, game.world.centerY, 'player');
 pstatico.anchor.setTo(0.5, 0.5);
     player = game.add.sprite(game.world.centerX, game.world.centerY, 'player');
@@ -122,6 +112,7 @@ pstatico.anchor.setTo(0.5, 0.5);
     //  The smaller the value, the smooth the camera (and the longer it takes to catch up)
     game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 
+    
    
  
 var bmd = game.make.bitmapData(mundox,mundoy);
@@ -129,12 +120,12 @@ var p1x=mundox/2;
 var p1y=0;
 var p2x=mundox/2;
 var p2y=mundoy/2;
-bmd.line(p1x, p1y, p2x,p2y, '#ef3a16', 0.2);
+//bmd.line(p1x, p1y, p2x,p2y, '#ef3a16', 0.2);
 
-bmd.addToWorld(); 
+//bmd.addToWorld(); 
 
 
-crearejes(ox,oy);
+//crearejes(ox,oy);
 
 
 var  style={ font: "bold "+String(vw*0.04)+"px Arial", fill: "#B21437", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -149,7 +140,7 @@ editex.update();
 editex.fijaracambasico(true);
 editex.visibletrigono(false); 
 
-
+/*
   bmd = game.make.bitmapData(mundox, mundoy);
     bmd.addToWorld();
       bmdf1 = game.make.bitmapData(mundox, mundoy);
@@ -159,24 +150,8 @@ editex.visibletrigono(false);
     bmdf2.addToWorld();
       bmdf3 = game.make.bitmapData(mundox, mundoy);
     bmdf3.addToWorld();
+¨*/
 
-
-/*
-  handle1 = game.add.sprite(mundox/2,mundoy/2, 'balls', 0);
-    handle1.anchor.set(0.5);
-    handle1.inputEnabled = true;
-    handle1.input.enableDrag(true);
-
-    handle2 = game.add.sprite(mundox/2+70,mundoy/2-70, 'balls', 0);
-    handle2.anchor.set(0.5);
-    handle2.inputEnabled = true;
-    handle2.input.enableDrag(true);
-
-
-    line = new Phaser.Line(handle1.x, handle1.y, handle2.x, handle2.y);
-  
-
-*/
 
 
 
@@ -198,8 +173,8 @@ function update() {
 //line.fromSprite(handle1, handle2, false);
     fon.rotation += 0.005;
 
-mirtensparente.x=((mir.x+ox*unidadmedida)-mundox/2)/unidadmedida;
-mirtensparente.y=-((mir.y-(oy)*unidadmedida)-mundoy/2)/unidadmedida;
+//mirtensparente.x=((mir.x+ox*unidadmedida)-mundox/2)/unidadmedida;
+//mirtensparente.y=-((mir.y-(oy)*unidadmedida)-mundoy/2)/unidadmedida;
     /*
 if(mir.x<mundox/2){
 mirtensparente.x=((+mir.x-mundox/2)/unidadmedida;
@@ -236,7 +211,7 @@ mirtensparente.y=(-mir.y+mundoy/2)/unidadmedida;
     }
 */
 
-mir.rotation = game.physics.arcade.moveToPointer(mir, 60, game.input.activePointer, 500);
+//mir.rotation = game.physics.arcade.moveToPointer(mir, 60, game.input.activePointer, 500);
 
 }
 
