@@ -69,13 +69,7 @@ game.physics.enable(fon, Phaser.Physics.ARCADE);
 
 //game.physics.arcade.enable([sprite, sprite2]);
 
-   cruz=game.add.sprite(mundox/2,mundoy/2, 'cruz');
-  cruz.anchor.setTo(0.5, 0.5);
-  cruz.scale.set(0.0022580645*mundox+0.5612903226);
-  cruz.width;
-  cruz.x=mundox/2;
-   cruz.y=mundoy/2;
-   cruz.fixedToCamera=true;
+  
 
 
 
@@ -115,7 +109,7 @@ pstatico.anchor.setTo(0.5, 0.5);
     
    
  
-var bmd = game.make.bitmapData(mundox,mundoy);
+//var bmd = game.make.bitmapData(mundox,mundoy);
 var p1x=mundox/2;
 var p1y=0;
 var p2x=mundox/2;
@@ -127,7 +121,7 @@ var p2y=mundoy/2;
 
 //crearejes(ox,oy);
 
-
+/*
 var  style={ font: "bold "+String(vw*0.04)+"px Arial", fill: "#B21437", boundsAlignH: "center", boundsAlignV: "middle" };
    editex= new  Editext(game,vw,vh,style,function (){});
 
@@ -138,7 +132,7 @@ var  style={ font: "bold "+String(vw*0.04)+"px Arial", fill: "#B21437", boundsAl
 editex.update();
 
 editex.fijaracambasico(true);
-editex.visibletrigono(false); 
+editex.visibletrigono(false); */
 
 /*
   bmd = game.make.bitmapData(mundox, mundoy);
