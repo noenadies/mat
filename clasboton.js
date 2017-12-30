@@ -6,11 +6,6 @@ var valorxmax=12;
 function cargaimaeditext(){
 
 
-    game.load.spritesheet('gamepad', 
-            'gamepad_spritesheet.png', 100, 100);
-
-    game.load.spritesheet('gamepad2', 
-            'gamepad_spritesheet.png', 100, 100);
 
 
   game.load.image('btf1', 'btf1.png');
