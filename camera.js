@@ -20,7 +20,10 @@ var mir;
 
         var IDE_HOOK = false;
         var VERSION = '2.6.2';
-
+ var bmdf1;
+  var bmdf3;
+  var bmdf2; 
+  var bmd; 
         
 var game = new Phaser.Game(vw,vh, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
