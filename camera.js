@@ -15,7 +15,7 @@ var text_nux=[];
 var text_nuxn=[];
 var text_nuy=[];
 var text_nuyn=[];
-
+var graphics2;
 
  var unidadmedida=60;
  var cuantaslineas=20;
@@ -102,8 +102,26 @@ graphics =game.add.graphics(0, 0);
     graphics.moveTo(mundox/2, 0);
     graphics.lineTo(mundox/2,mundoy);
     graphics.moveTo(0,mundoy/2);
-    graphics.lineTo(mundox,mundoy/2);
+    graphics.lineTo(mundox,2100);
+    console.log(mundoy/2);
     
+
+
+graphics2 =game.add.graphics(0, 0);
+
+    graphics2.beginFill(0x027a71);
+    graphics2.lineStyle(4, 0x02fdeb, 0.6);
+    
+   
+
+
+
+
+
+
+
+
+
    
 
 var p1x=mundox/2;
@@ -173,7 +191,7 @@ if(editex.booltexto_f3){
  
 textoecua=editex.valortexto_f3;
 
-bmdf3.clear();
+//bmdf3.clear();
 
 
 
@@ -189,7 +207,7 @@ theplot[0].addPlot(String(textoecua),FOOPLOT_TYPE_FUNCTION,{'color':$(this).find
   
    theplot[0].reDraw();
   colorf3='#F32D09';
-    ecuacion(bmdf3,colorf3);
+    ecuacion();
 
 
 }
@@ -253,9 +271,9 @@ theplot[0].addPlot(String(textoecua),FOOPLOT_TYPE_FUNCTION,{'color':$(this).find
 
 
 
+//function ecuacion (bmdobj,colr){
 
-
-function ecuacion (bmdobj,colr){
+function ecuacion (){
 var cc=0;
 
 var  arrayl=[]; 
@@ -277,7 +295,7 @@ indicefy1=fy1.length/2;
 ox=Math.round(fx1[indicefy1]);
  oy=Math.round(fy1[indicefy1]);
  console.log(ox+"  "+oy);
-cambiartextx();
+//cambiartextx();
 }
 
 
@@ -286,16 +304,20 @@ var  n1=0;
 var n2=0;
 var f=unidadmedida;
 var ct=0;
+
+graphics2.moveTo(mundox/2+(arrayl[n1].x-ox)*f,mundoy/2-(arrayl[n1].y-oy)*f);
 for(var i=1; i<arrayl.length;i=i+1){
   ct=ct;
   n1=ct;
   n2=ct+1;
  
-
-
+// graphics2.moveTo(mundox/2, 0);
+  graphics2.lineTo(mundox/2+(arrayl[i].x-ox)*f,mundoy/2 -(arrayl[i].y-oy)*f);
+    
+/*
 bmdobj.line(mundox/2+(arrayl[n1].x-ox)*f,mundoy/2-(arrayl[n1].y-oy)*f,
   mundox/2+(arrayl[n2].x-ox)*f,mundoy/2 -(arrayl[n2].y-oy)*f,colr, 7);
-ct=ct+1;
+ct=ct+1;*/
 
 }
 
