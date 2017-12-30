@@ -8,6 +8,7 @@ function cargaimaeditext(){
 
 
 
+
   game.load.image('btf1', 'btf1.png');
   game.load.image('btf2', 'btf2.png');
   game.load.image('btf3', 'btf3.png');
@@ -223,17 +224,6 @@ this.charantes_f2=[];
        this.text_f2.setShadow(3, 3, 'rgba(0,0,0,0.5)', 2);
 
 
-var styles = { font: "bold "+String(vw*0.04)+"px Arial", fill: "#15FFCB", boundsAlignH: "center", boundsAlignV: "middle" };
- 
-         
- 
-
-//  boton  texto  fucnion matematica  f3 
-
- this.Textsalx = game.add.text(this.text_f2.x+vw*0.4, this.text_f1.y, 'x=', styles);
- this.Textsaly = game.add.text(this.text_f2.x+vw*0.4, this.text_f2.y+33,'y=', styles);
-this.Textsaly.setShadow(3, 3, 'rgba(0,0,0,0.5)', 2);
-this.Textsalx.setShadow(3, 3, 'rgba(0,0,0,0.5)', 2);
 
 
 
@@ -490,6 +480,12 @@ this.contarborrarchar_f2=this.contarborrarchar_f2+1;
 
 
    
+
+
+
+
+
+//  boton  texto  fucnion matematica  f3 
 
 
 
@@ -2873,7 +2869,7 @@ btgraf.inputEnabled = true;
 btgraf.input.useHandCursor = true;
 
 
-btgraf.events.onInputDown.add(act_btngraf, this);
+//btgraf.events.onInputDown.add(act_btngraf, this);
 
 
 
@@ -3036,7 +3032,7 @@ this.sprite.visible =false;
 function fbtderi_onDown(){
 
 
-window.location ="https://noenadies.github.io/mate/";
+window.location ="https://www.google.es/";
 
 
 
@@ -5296,11 +5292,6 @@ this.update=function(){
     btf2.position.x= btcero.position.x+vw*0;
    btf2.position.y=btcero.position.y-vh*0.76;
 
-
-
-
-
-
  btderi.position.x= btf2.position.x+vw*0.80;
    btderi.position.y=btf2.position.y;
 
@@ -5778,8 +5769,7 @@ btacoth.fixedToCamera=fijar;
 btasech.fixedToCamera=fijar;
 btacsch.fixedToCamera=fijar;
 btderi.fixedToCamera=fijar;
-this.Textsaly.fixedToCamera=fijar;
-this.Textsalx.fixedToCamera=fijar;
+
 
 }
 
