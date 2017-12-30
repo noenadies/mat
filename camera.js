@@ -95,16 +95,7 @@ pstatico.anchor.setTo(0.5, 0.5);
     game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 
     
-graphics =game.add.graphics(0, 0);
 
-    graphics.beginFill(0x027a71);
-    graphics.lineStyle(4, 0x02fdeb, 0.6);
-    
-    graphics.moveTo(mundox/2, 0);
-    graphics.lineTo(mundox/2,mundoy);
-    graphics.moveTo(0,mundoy/2);
-    graphics.lineTo(mundox,mundoy/2);
-    
    
 
 var p1x=mundox/2;
